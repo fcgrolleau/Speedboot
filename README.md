@@ -16,4 +16,4 @@ speedboot_object.fit(R=999, par=True, seed=1)
 speedboot_object.plot()
 speedboot_object.emp_ci()
 ```
-See a demo in [<a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">demo.ipynb</a>]. 
+See a demo in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">demo.ipynb</a>. 
