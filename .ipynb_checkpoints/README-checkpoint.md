@@ -1,5 +1,5 @@
 # Speedboot
-This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting estimates' distribution and computation of various confidence intervals are available. <img src="logo.png" align="right" alt="" width="160" />
+This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting estimates' distribution and computation of various confidence intervals are available. <img src="figures/logo.png" align="right" alt="" width="160" />
 
 ### Author
 The library is written and maintained by François Grolleau (francois.grolleau@aphp.fr).
