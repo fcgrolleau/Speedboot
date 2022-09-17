@@ -21,4 +21,4 @@ sb_object.emp_ci()
 See a demo in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">demo.ipynb</a>.
 
 ### History
-Release history is availabe on <a href="https://pypi.org/project/speedboot/">PyPI</a>.
+Release history is available on <a href="https://pypi.org/project/speedboot/">PyPI</a>.
