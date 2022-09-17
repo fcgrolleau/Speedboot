@@ -22,7 +22,7 @@ class speedboot:
         self.data = pd.DataFrame(data)
         self.stats_fun = stats_fun
 
-    def fit(self, R=999, bar = True, par = True, seed=0):
+    def fit(self, R=999, bar = True, par = False, seed=0):
         """Bootstrap multiple statistics at once given data.
         
         Attributes:
