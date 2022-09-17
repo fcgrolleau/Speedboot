@@ -11,9 +11,9 @@ pip install speedboot
 
 ### Implementation
 ```python
-speedboot_object = speedboot(data=n_sample, stats_fun=estimators)
-speedboot_object.fit(R=999, par=True, seed=1)
-speedboot_object.plot()
-speedboot_object.emp_ci()
+sb_object = speedboot(data=n_sample, stats_fun=estimators)
+sb_object.fit(R=999, par=True, seed=1)
+sb_object.plot()
+sb_object.emp_ci()
 ```
 See a demo in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">demo.ipynb</a>. 
