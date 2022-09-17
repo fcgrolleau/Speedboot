@@ -12,6 +12,7 @@ pip install speedboot
 ### Implementation
 ```python
 from speedboot import speedboot
+
 sb_object = speedboot(data=n_sample, stats_fun=estimators)
 sb_object.fit(R=999, par=True, seed=1)
 sb_object.plot()
