@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.17'
+VERSION = '0.0.18'
 DESCRIPTION = 'Speed Bootstrap'
 LONG_DESCRIPTION = 'Boostrap fast using parallel processing for vector-valued statistics. Plot estimates and compute various confidence intervals. To see a quick demo click <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">here</a>. Source code is available <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/speedboot.py">there</a>.'
 

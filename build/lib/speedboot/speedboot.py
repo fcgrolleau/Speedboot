@@ -47,12 +47,12 @@ class speedboot:
         self.ests_boot = np.vstack([ests_i.T for ests_i in boot_estimates])
         self.ests = np.array(self.stats_fun(self.data))
     
-    def emp_ci(self, risk_a=.05):
+    def emp_ci(self, alpha=.05):
         """from an array of estimates and a R x len(slef.ests) matrix of bootstrap estimates
         outputs a len(slef.ests) x 2 matrix of empirical bootstrap CI.
         
         Attributes:
-            alpha (probability float): alpha risk that determines confidence interval width i.e., risk_a=.05 for 95% confidence intervals.
+            alpha (probability float): alpha risk that determines confidence interval width i.e., alpha=.05 for 95% confidence intervals.
         """
         quantiles = np.array([np.nanquantile(self.ests_boot[:,est_id],[1-alpha/2, alpha/2]) for est_id, _ in enumerate(self.ests)])
         if len(self.ests) == 1:
@@ -65,7 +65,7 @@ class speedboot:
         outputs a len(slef.ests) x 2 matrix of empirical bootstrap CI.
                 
         Attributes:
-            alpha (probability float): alpha risk that determines confidence interval width i.e., risk_a=.05 for 95% confidence intervals.
+            alpha (probability float): alpha risk that determines confidence interval width i.e., alpha=.05 for 95% confidence intervals.
         """
         return np.array([np.nanquantile(self.ests_boot[:,est_id],[alpha/2, 1-alpha/2]) for est_id, _ in enumerate(self.ests)])
     
