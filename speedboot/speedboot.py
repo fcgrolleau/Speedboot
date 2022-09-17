@@ -52,22 +52,22 @@ class speedboot:
         outputs a len(slef.ests) x 2 matrix of empirical bootstrap CI.
         
         Attributes:
-            risk_a (probability float): alpha risk that determines confidence interval width i.e., risk_a=.05 for 95% confidence intervals.
+            alpha (probability float): alpha risk that determines confidence interval width i.e., risk_a=.05 for 95% confidence intervals.
         """
-        quantiles = np.array([np.nanquantile(self.ests_boot[:,est_id],[1-risk_a/2, risk_a/2]) for est_id, _ in enumerate(self.ests)])
+        quantiles = np.array([np.nanquantile(self.ests_boot[:,est_id],[1-alpha/2, alpha/2]) for est_id, _ in enumerate(self.ests)])
         if len(self.ests) == 1:
             return 2*self.ests-quantiles
         else:
             return np.multiply(2,self.ests).reshape(len(self.ests),1)-quantiles
 
-    def per_ci(self, risk_a=.05):
+    def per_ci(self, alpha=.05):
         """from an array of estimates and a R x len(slef.ests) matrix of bootstrap estimates
         outputs a len(slef.ests) x 2 matrix of empirical bootstrap CI.
                 
         Attributes:
-            risk_a (probability float): alpha risk that determines confidence interval width i.e., risk_a=.05 for 95% confidence intervals.
+            alpha (probability float): alpha risk that determines confidence interval width i.e., risk_a=.05 for 95% confidence intervals.
         """
-        return np.array([np.nanquantile(self.ests_boot[:,est_id],[risk_a/2, 1-risk_a/2]) for est_id, _ in enumerate(self.ests)])
+        return np.array([np.nanquantile(self.ests_boot[:,est_id],[alpha/2, 1-alpha/2]) for est_id, _ in enumerate(self.ests)])
     
     def plot(self, prec=.05, size=4):
         """plots histograms of the bootstrap estimates
