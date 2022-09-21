@@ -87,6 +87,13 @@ class speedboot:
             ax.set_title("Estimate " + str(n+1))
             
     def jackknife(self, bar = True, par = False):
+        """Compute jackknife estimates for multiple statistics at once given data.
+        
+        Attributes:
+            bar (bool): print progress bar.
+            par (bool): parallelization on all cores.
+        """
+            
         num_cores = multiprocessing.cpu_count()
 
         jack_dfs = [self.data.drop(i) for i in range(len(self.data))]
@@ -102,6 +109,13 @@ class speedboot:
         self.ests_jack = np.vstack([ests_i.T for ests_i in jack_estimates]) 
         
     def bca_ci(self, alpha=.05):
+        """from an array of estimates and a R x len(slef.ests) matrix of bootstrap estimates and a
+        len(self.data) x len(slef.ests) matrix of jackknife estimates this method outputs a 
+        len(slef.ests) x 2 matrix of BCa (bias-corrected and accelerated) CI.
+                
+        Attributes:
+            alpha (probability float): alpha risk that determines confidence interval width i.e., alpha=.05 for 95% confidence intervals.
+        """
         try:
             self.ests_jack is float
         except AttributeError:
