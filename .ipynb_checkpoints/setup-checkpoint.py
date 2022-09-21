@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.2'
+VERSION = '0.0.21'
 DESCRIPTION = 'Speed Bootstrap'
 LONG_DESCRIPTION = 'This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting estimates distribution and computation of bias-corrected and accelerated confidence intervals are available. To see a quick demo click <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">here</a>. Source code is available <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/speedboot.py">there</a>.'
 
@@ -19,6 +19,7 @@ setup(
     install_requires=['joblib', 'tqdm'],
     keywords=['bootstrap', 'confidence intervals', 'statistics', 'inference', 'parallel'],
     classifiers=[
+        "License :: OSI Approved :: MIT License",
         "Development Status :: 1 - Planning",
         "Intended Audience :: Science/Research",
         "Programming Language :: Python :: 3",
