@@ -1,5 +1,5 @@
 # Speedboot
-This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting estimates' distribution and computation of various confidence intervals are available. <img src="figures/logo.png" align="right" alt="" width="160" />
+This library lets you boostrap vector-valued statistics fast as it uses parallel processing.  Ploting estimates distribution and computation of bias-corrected and accelerated confidence intervals are available. <img src="figures/logo.png" align="right" alt="" width="160" />
 
 ### Installation
 ```
@@ -16,6 +16,7 @@ sb_object.plot()
 sb_object.emp_ci()
 ```
 See a quick demo in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">demo.ipynb</a>.
+See a quick simulations in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/simulations.ipynb">simulations.ipynb</a>.
 
 ### History
 Release history is available on <a href="https://pypi.org/project/speedboot/">PyPI</a>.
