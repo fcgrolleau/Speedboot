@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: speedboot
-Version: 0.0.22
-Summary: Speed Bootstrap
+Version: 0.0.23
+Summary: Bootstrap library for vector-valued statistics with BCa confidence intervals.
 Home-page: UNKNOWN
 Author: François Grolleau
 Author-email: <francois.grolleau@aphp.fr>

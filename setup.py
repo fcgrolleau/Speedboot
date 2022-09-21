@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.22'
-DESCRIPTION = 'Speed Bootstrap'
+VERSION = '0.0.23'
+DESCRIPTION = 'Bootstrap library for vector-valued statistics with BCa confidence intervals.'
 LONG_DESCRIPTION = 'This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting as well as computation of bias-corrected and accelerated confidence intervals are available. To see a quick demo click <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">here</a>. Source code is available <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/speedboot.py">there</a>.'
 
 # Setting up
