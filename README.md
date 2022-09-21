@@ -1,4 +1,8 @@
 # Speedboot
+[![PyPI Latest Release](https://img.shields.io/pypi/v/speedboot.svg)](https://pypi.org/project/speedboot/)
+[![License](https://img.shields.io/pypi/l/ARE-compute.svg)](https://github.com/fcgrolleau/speedboot/blob/main/LICENSE)
+[![Python](https://img.shields.io/static/v1?label=made%20with&message=Python&color=blue&style=for-the-badge&logo=Python&logoColor=white)](#)
+
 This library lets you boostrap vector-valued statistics fast as it uses parallel processing.  Ploting estimates distribution and computation of bias-corrected and accelerated confidence intervals are available. <img src="figures/logo.png" align="right" alt="" width="160" />
 
 ### Installation
