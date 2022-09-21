@@ -20,7 +20,7 @@ sb_object.plot()
 sb_object.emp_ci()
 ```
 See a quick demo in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">demo.ipynb</a>.
-See baby simulations in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/simulations.ipynb">simulations.ipynb</a>.
+See toy simulations in <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/simulations.ipynb">simulations.ipynb</a>.
 
 ### History
 Release history is available on <a href="https://pypi.org/project/speedboot/">PyPI</a>.
