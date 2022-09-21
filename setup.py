@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.19'
+VERSION = '0.0.2'
 DESCRIPTION = 'Speed Bootstrap'
-LONG_DESCRIPTION = 'This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting estimates distribution and computation of various confidence intervals are available. To see a quick demo click <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">here</a>. Source code is available <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/speedboot.py">there</a>.'
+LONG_DESCRIPTION = 'This library lets you boostrap vector-valued statistics fast as it uses parallel processing. Ploting estimates distribution and computation of bias-corrected and accelerated confidence intervals are available. To see a quick demo click <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/demo.ipynb">here</a>. Source code is available <a href="https://github.com/fcgrolleau/speedboot/blob/main/speedboot/speedboot.py">there</a>.'
 
 # Setting up
 setup(
